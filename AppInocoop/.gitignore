@@ -1,0 +1,57 @@
+# Compiled files
+bin/
+obj/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.vcxproj.user
+*.csproj.user
+
+# Build results
+Build/
+out/
+
+# Logs
+*.log
+
+# IDE settings
+.vs/
+.vscode/
+
+# Dependency caches
+node_modules/
+packages/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.DS_Store
+Thumbs.db
+
+# macOS
+.DS_Store
+
+# Windows
+*.stackdump
+Thumbs.db
+
+# Linux
+*.directory
+
+# JetBrains Rider/IDEA
+.idea/
+*.iml
+
+# MAUI-specific
+**/platforms/**/bin/
+**/platforms/**/obj/
+**/Resources/Fonts/*.ttf.cache
+
+# Secrets and sensitive files
+appsettings.json
+appsettings.*.json
+secrets.json
