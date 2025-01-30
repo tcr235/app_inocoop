@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using AppInocoop.ViewModels;
+using Microsoft.Extensions.Logging;
 
 namespace AppInocoop
 {
@@ -15,6 +16,8 @@ namespace AppInocoop
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
 
+            builder.Services.AddSingleton<IBluetoothService, BluetoothService>();
+            builder.Services.AddSingleton<MainViewModel>();
 #if DEBUG
     		builder.Logging.AddDebug();
 #endif
