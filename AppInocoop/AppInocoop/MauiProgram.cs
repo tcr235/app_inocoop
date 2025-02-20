@@ -1,5 +1,4 @@
 ﻿using AppInocoop.ViewModels;
-using Microsoft.Extensions.Logging;
 
 namespace AppInocoop
 {
@@ -18,9 +17,6 @@ namespace AppInocoop
 
             builder.Services.AddSingleton<IBluetoothService, BluetoothService>();
             builder.Services.AddSingleton<MainViewModel>();
-#if DEBUG
-    		builder.Logging.AddDebug();
-#endif
 
             return builder.Build();
         }
